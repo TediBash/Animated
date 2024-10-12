@@ -12,7 +12,7 @@ const Navbar = () => {
                     animate={{opacity:1, scale:1}}
                     transition={{duration:0.5}}
                 >
-                    Tedi Dev
+                    Tedi Dev1
                 </motion.span>
                 <div className='social'>
                     <a href='#'>
