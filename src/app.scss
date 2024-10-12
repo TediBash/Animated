@@ -1,0 +1,50 @@
+html{
+    // This is how to make nice scroll between sections!
+    scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
+}
+
+*{
+    // Remove all the space margin so i can cover 100 width and give font style
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+body{
+    // Default color for the website
+    background-color: #0c0c1d;
+    color: lightgray;
+}
+
+a {
+    text-decoration: none;
+    // Take the color of the parent ==> in this case is Body
+    color: inherit;
+}
+
+section{
+    height: 100vh;
+    // Scroll between sections!
+    scroll-snap-align: center;
+}
+
+
+@mixin mobile {
+    @media (max-width:738px){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width:1024px){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (max-width:1366px){
+        @content;
+    }
+}
